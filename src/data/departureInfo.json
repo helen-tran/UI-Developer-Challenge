@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "departureTime": "8:00am",
+    "departureLocation": "Port Authority",
+    "departureCity": "New York City",
+    "arrivalTime": "12:30pm",
+    "arrivalLocation": "Union Station",
+    "arrivalCity": "Washington"
+  }
+]
