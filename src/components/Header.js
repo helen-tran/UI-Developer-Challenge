@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import Logo from "../../assets/Greyhound.svg";
 import Wifi from "../../assets/Wifi.svg";
 import Bathroom from "../../assets/Bathroom.svg";

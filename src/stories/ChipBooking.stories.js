@@ -2,7 +2,7 @@ import ChipBooking from "../components/Chip-Booking";
 import { Button } from "./Button";
 
 export default {
-  title: "Components/Chip/Chip-Booking",
+  title: "Components/Chip",
   component: Button,
   argTypes: { onClick: { action: "onClick" } },
 };

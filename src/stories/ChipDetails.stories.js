@@ -2,7 +2,7 @@ import ChipDetails from "../components/Chip-Details";
 import { Button } from "./Button";
 
 export default {
-  title: "Components/Chip/Chip-Details",
+  title: "Components/Chip",
   component: Button,
   argTypes: { onClick: { action: "onClick" } },
 };
