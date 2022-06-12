@@ -14,7 +14,7 @@ const InfoDetailSummary = () => {
   const Time = {
     color: "#20415A",
     fontWeight: "normal",
-    marginBottom: "4px",
+    marginBottom: "2px",
     marginTop: 0,
     fontSize: "18px",
   };
@@ -24,7 +24,7 @@ const InfoDetailSummary = () => {
     fontSize: "14px",
     color: "#6D8BA1",
     marginTop: "2px",
-    marginBottom: "12px",
+    marginBottom: "8px",
   };
 
   const Location = {

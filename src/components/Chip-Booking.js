@@ -34,8 +34,6 @@ const ChipBooking = ({ label, onClick, isPaleBlue }) => {
     lineHeight: "20px",
     fontFamily: "Codec Pro",
     fontWeight: "bold",
-    marginBottom: "8px",
-    marginRight: "8px",
   };
   return (
     <>

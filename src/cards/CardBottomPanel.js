@@ -23,6 +23,8 @@ const CardBottomPanel = () => {
     alignItems: "center",
     marginLeft: "20px",
     marginTop: "8px",
+    marginRight: "8px",
+    marginBottom: "8px",
   };
 
   const Text = {
@@ -30,6 +32,9 @@ const CardBottomPanel = () => {
     fontWeight: "bold",
     fontSize: "16px",
     color: "#20415A",
+    marginRight: "8px",
+    marginTop: 0,
+    marginBottom: 0,
   };
 
   const Line = {
@@ -50,8 +55,8 @@ const CardBottomPanel = () => {
       <div style={RowWrapper}>
         <div style={{ display: "flex" }}>
           <p style={Text}>First-class</p>
-          <img src={Refund} />
-          <img src={SeatXL} />
+          <img src={Refund} style={{ marginRight: "4px" }} />
+          <img src={SeatXL} style={{ marginRight: "4px" }} />
           <img src={Utensils} />
         </div>
         <ChipBooking label="$95" isPaleBlue={true} />

@@ -8,4 +8,4 @@ export default {
 const Template = (args) => <SellableCard {...args} />;
 
 export const Sellable = Template.bind({});
-Sellable.args = { size: "mobile" };
+Sellable.args = { size: "mobile", borderOn: true };

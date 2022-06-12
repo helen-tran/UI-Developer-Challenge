@@ -8,11 +8,12 @@ const FooterPurchase = ({ bottomPanel }) => {
   const Wrapper = {
     display: "flex",
     justifyContent: "space-between",
+    alignItems: "center",
     marginLeft: "16px",
     fontFamily: "Codec Pro",
     fontWeight: "normal",
     color: "#436783",
-    height: "40px;",
+    height: "40px",
   };
 
   const AttributeWrapper = {
@@ -24,6 +25,11 @@ const FooterPurchase = ({ bottomPanel }) => {
     marginBottom: "16px",
   };
 
+  const OptionsWrapper = {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  };
   const Duration = {
     marginLeft: "8pt",
   };
@@ -34,36 +40,78 @@ const FooterPurchase = ({ bottomPanel }) => {
     fontSize: "14px",
   };
 
+  const Option = {
+    fontWeight: "bold",
+    fontSize: "14px",
+    textAlign: "center",
+    color: "#698CA5",
+    marginTop: "0",
+    marginBottom: 0,
+    paddingRight: "28px",
+  };
   // JSX
   return (
     <div style={Wrapper}>
-      <div style={AttributeWrapper}>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <div>
+      {bottomPanel ? (
+        <div style={OptionsWrapper}>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
             <img src={Bus} />
+            <p style={Text}>Bus</p>
           </div>
-          <p style={Text}>Bus</p>
-        </div>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <div style={Duration}>
-            <img src={Time} />
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <div style={Duration}>
+              <img src={Time} />
+            </div>
+            <p style={Text}>4h 30m</p>
           </div>
-          <p style={Text}>4h 30m</p>
         </div>
+      ) : (
+        <div style={AttributeWrapper}>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <div>
+              <img src={Bus} />
+            </div>
+            <p style={Text}>Bus</p>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <div style={Duration}>
+              <img src={Time} />
+            </div>
+            <p style={Text}>4h 30m</p>
+          </div>
+        </div>
+      )}
+      <div>
+        {bottomPanel ? (
+          <p style={Option}>Multiple options:</p>
+        ) : (
+          <ChipBooking label="$45" />
+        )}
       </div>
-      {bottomPanel ? <div>Multiple options:</div> : <ChipBooking label="$45" />}
     </div>
   );
 };
