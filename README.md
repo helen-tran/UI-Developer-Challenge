@@ -8,7 +8,7 @@ In the terminal, run "npm run storybook"
 
 ## Components
 
-In the terminal, run "npm run storybook"
+In the terminal, run **"npm run storybook"**.
 
 ### Chip
 
