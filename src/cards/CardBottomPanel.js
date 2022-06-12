@@ -5,7 +5,7 @@ import SeatXL from "../../assets/SeatXL.svg";
 import Utensils from "../../assets//Utensils.svg";
 import PropTypes from "prop-types";
 
-const CardBottomPanel = (size = "mobile") => {
+const CardBottomPanel = ({ size = "mobile" }) => {
   // Reponsiveness;
   let width = "360px";
   if (size === "tablet") width = "600px";
@@ -13,10 +13,10 @@ const CardBottomPanel = (size = "mobile") => {
 
   // CSS Styling
   const Wrapper = {
+    width: `${width}`,
     outline: "solid",
     outlineColor: "#A3E7FF",
     height: "314px",
-    width: `${width}`,
     backgroundColor: "#E6F6FF",
     borderRadius: "24px",
     display: "flex",
@@ -52,7 +52,7 @@ const CardBottomPanel = (size = "mobile") => {
   //   JSX
   return (
     <div style={Wrapper}>
-      <SellableCard bottomPanel={true} />
+      <SellableCard bottomPanel={true} size={size} />
       <div style={RowWrapper}>
         <p style={Text}>Regular</p>
         <ChipBooking label="$45" isPaleBlue={true} />
