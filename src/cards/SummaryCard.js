@@ -3,10 +3,15 @@ import InfoDetailSummary from "../components/InfoDetailSummary";
 import FooterSummary from "../components/FooterSummary";
 import PropTypes from "prop-types";
 
-const SummaryCard = () => {
+const SummaryCard = ({ size = "mobile" }) => {
+  // Reponsiveness;
+  let width = "360px";
+  if (size === "tablet") width = "600px";
+  if (size === "web") width = "";
+
   // CSS Styling
   const Wrapper = {
-    width: "360px",
+    width: `${width}`,
     height: "222px",
     borderRadius: "24px",
     backgroundColor: "white",

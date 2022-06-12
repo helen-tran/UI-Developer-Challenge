@@ -11,6 +11,13 @@ const InfoDetail = () => {
     marginTop: "20px",
   };
 
+  const TextArrowWrapper = {
+    display: "flex",
+    alignItems: "flex-start",
+    justifyContent: "space-between",
+    width: "100%",
+  };
+
   const Time = {
     color: "#20415A",
     fontWeight: "bold",
@@ -28,6 +35,7 @@ const InfoDetail = () => {
     marginTop: 0,
     fontSize: "16px",
     lineHeight: "20px",
+    whiteSpace: "nowrap",
   };
   const City = {
     color: "#6D8BA1",
@@ -50,26 +58,22 @@ const InfoDetail = () => {
     lineHeight: "16px",
   };
 
-  const Arrow = {
-    height: "12px",
-    marginLeft: "16px",
-  };
-
   //   JSX
   return (
     <div style={Wrapper}>
-      <div>
-        <h3 style={Time}>8:00am</h3>
-        <h4 style={Location}>Port Authority</h4>
-        <h4 style={City}>New york city</h4>
-        <a href="" style={Map}>
-          Map
-        </a>
+      <div style={TextArrowWrapper}>
+        <div style={{ marginRight: "16px" }}>
+          <h3 style={Time}>8:00am</h3>
+          <h4 style={Location}>Port Autority</h4>
+          <h4 style={City}>New york city</h4>
+          <a href="" style={Map}>
+            Map
+          </a>
+        </div>
+        <img src={LongArrow} />
       </div>
-      <div style={{ marginRight: "10%" }}>
-        <img src={LongArrow} style={Arrow} />
-      </div>
-      <div>
+
+      <div style={{ marginLeft: "10%", width: "100%" }}>
         <h3 style={Time}>12:30am</h3>
         <h4 style={Location}>Union Station</h4>
         <h4 style={City}>Washington</h4>

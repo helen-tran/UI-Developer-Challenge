@@ -1,6 +1,13 @@
 import FastIcon from "../../assets/Fastest.svg";
 import SellableCard from "../cards/SellableCard";
-const CardTopPanel = () => {
+import PropTypes from "prop-types";
+
+const CardTopPanel = ({ size = "mobile" }) => {
+  // Reponsiveness;
+  let width = "360px";
+  if (size === "tablet") width = "600px";
+  if (size === "web") width = "";
+
   // CSS Styling
   const Wrapper = {
     outline: "solid",
@@ -8,7 +15,7 @@ const CardTopPanel = () => {
     backgroundColor: "#CFFCDD",
     fontFamily: "Codec Pro",
     borderRadius: "24px",
-    width: "360px",
+    width: `${width}`,
     height: "234px",
     position: "relative",
     boxShadow:
@@ -38,5 +45,9 @@ const CardTopPanel = () => {
       <SellableCard />
     </div>
   );
+};
+
+CardTopPanel.propTypes = {
+  size: PropTypes.oneOf(["mobile", "tablet", "web"]),
 };
 export default CardTopPanel;

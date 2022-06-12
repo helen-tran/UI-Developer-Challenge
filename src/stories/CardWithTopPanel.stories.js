@@ -8,4 +8,4 @@ export default {
 const Template = (args) => <CardTopPanel {...args} />;
 
 export const WithTopPanel = Template.bind({});
-WithTopPanel.args = {};
+WithTopPanel.args = { size: "mobile" };

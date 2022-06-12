@@ -3,14 +3,20 @@ import SellableCard from "./SellableCard";
 import Refund from "../../assets/Refund.svg";
 import SeatXL from "../../assets/SeatXL.svg";
 import Utensils from "../../assets//Utensils.svg";
+import PropTypes from "prop-types";
 
-const CardBottomPanel = () => {
+const CardBottomPanel = (size = "mobile") => {
+  // Reponsiveness;
+  let width = "360px";
+  if (size === "tablet") width = "600px";
+  if (size === "web") width = "";
+
   // CSS Styling
   const Wrapper = {
     outline: "solid",
     outlineColor: "#A3E7FF",
     height: "314px",
-    width: "360px",
+    width: `${width}`,
     backgroundColor: "#E6F6FF",
     borderRadius: "24px",
     display: "flex",
@@ -65,4 +71,7 @@ const CardBottomPanel = () => {
   );
 };
 
+CardBottomPanel.propTypes = {
+  size: PropTypes.oneOf(["mobile", "tablet", "web"]),
+};
 export default CardBottomPanel;

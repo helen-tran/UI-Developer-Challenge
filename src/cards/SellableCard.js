@@ -5,13 +5,13 @@ import PropTypes from "prop-types";
 
 const SellableCard = ({ size = "mobile", bottomPanel, borderOn }) => {
   // Reponsiveness;
-  let scale = 1;
-  if (size === "tablet") scale = 3;
-  if (size === "web") scale = 1.5;
+  let width = "360px";
+  if (size === "tablet") width = "600px";
+  if (size === "web") width = "";
 
   // CSS Styling
   const Wrapper = {
-    width: "360px",
+    width: `${width}`,
     height: "202px",
     borderRadius: "24px",
     backgroundColor: "white",
