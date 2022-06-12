@@ -42,7 +42,7 @@ const CardTopPanel = ({ size = "mobile" }) => {
         <img src={FastIcon} style={{ marginRight: "2px" }} />
         <p style={Text}>Fastest</p>
       </div>
-      <SellableCard />
+      <SellableCard size={size} />
     </div>
   );
 };
