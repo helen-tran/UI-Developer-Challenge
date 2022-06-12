@@ -8,6 +8,10 @@ const Header = () => {
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
+    paddingTop: "16px",
+    paddingLeft: "20px",
+    paddingRight: "16px",
+    height: "24px",
   };
   return (
     <div style={wrapper}>

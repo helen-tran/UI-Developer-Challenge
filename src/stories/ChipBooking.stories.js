@@ -8,15 +8,8 @@ export default {
 };
 const Template = (args) => <ChipBooking {...args} />;
 
-export const DarkBlue = Template.bind({});
-DarkBlue.args = {
+export const PriceBlueChip = Template.bind({});
+PriceBlueChip.args = {
   label: "$45",
-  backgroundColor: "#0271CA",
-};
-
-export const PaleBlue = Template.bind({});
-PaleBlue.args = {
-  label: "$45",
-  backgroundColor: "#30B0FF1A",
-  color: "#20415A",
+  isPaleBlue: false,
 };

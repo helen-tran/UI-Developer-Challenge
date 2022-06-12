@@ -8,16 +8,20 @@ const FooterSummary = () => {
   const Wrapper = {
     display: "flex",
     justifyContent: "space-between",
-    alignItems: "center",
+    marginLeft: "16px",
+    fontFamily: "Codec Pro",
+    fontWeight: "normal",
+    color: "#436783",
+    height: "40px;",
   };
 
   const AttributeWrapper = {
     display: "flex",
-    justifyContent: "center",
     alignItems: "center",
-    fontFamily: "Codec Pro",
-    fontWeight: "normal",
-    color: "#436783",
+    justifyContent: "center",
+    height: "24px",
+    marginTop: "8px",
+    marginBottom: "16px",
   };
 
   const Duration = {
@@ -27,27 +31,46 @@ const FooterSummary = () => {
   const Text = {
     marginLeft: "2pt",
     margin: 0,
+    fontSize: "14px",
   };
 
   // JSX
   return (
     <div style={Wrapper}>
       <div style={AttributeWrapper}>
-        <div style={AttributeWrapper}>
-          <div style={AttributeWrapper}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <div>
             <img src={Bus} />
           </div>
           <p style={Text}>Bus</p>
         </div>
-        <div style={AttributeWrapper}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
           <div style={Duration}>
-            <img src={Time} style={AttributeWrapper} />
+            <img src={Time} />
           </div>
           <p style={Text}>4h 30m</p>
         </div>
-        <div style={AttributeWrapper}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
           <div style={Duration}>
-            <img src={Passengers} style={AttributeWrapper} />
+            <img src={Passengers} />
           </div>
           <p style={Text}>2</p>
         </div>

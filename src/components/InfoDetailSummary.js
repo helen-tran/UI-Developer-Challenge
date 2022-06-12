@@ -4,7 +4,6 @@ const InfoDetailSummary = () => {
   // CSS Styling
   const Wrapper = {
     display: "flex",
-    justifyContent: "center",
     fontFamily: "Codec Pro",
     marginLeft: "20px",
     marginRight: "12px",
@@ -56,7 +55,6 @@ const InfoDetailSummary = () => {
 
   const Arrow = {
     marginLeft: "16px",
-    marginRight: "10%",
   };
 
   //   JSX
@@ -71,7 +69,7 @@ const InfoDetailSummary = () => {
           Map
         </a>
       </div>
-      <div>
+      <div style={{ marginRight: "10%" }}>
         <img src={LongArrow} style={Arrow} />
       </div>
       <div>

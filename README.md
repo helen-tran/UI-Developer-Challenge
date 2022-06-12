@@ -4,11 +4,11 @@ Here is the challenge completed!
 
 ## Launch Storybook
 
-In the terminal, run "npm run storybook"
+In the terminal, run **"npm run storybook"**.
 
 ## Components
 
-In the terminal, run **"npm run storybook"**.
+Here are all the components.
 
 ### Chip
 
@@ -19,6 +19,8 @@ In the terminal, run **"npm run storybook"**.
 ### Info
 
 ## Cards
+
+Here are all the cards with the sub-components integrated.
 
 ### Sellable Card
 

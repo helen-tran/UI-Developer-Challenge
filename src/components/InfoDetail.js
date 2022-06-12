@@ -4,7 +4,6 @@ const InfoDetail = () => {
   // CSS Styling
   const Wrapper = {
     display: "flex",
-    justifyContent: "center",
     fontFamily: "Codec Pro",
     marginLeft: "20px",
     marginRight: "12px",
@@ -15,24 +14,30 @@ const InfoDetail = () => {
   const Time = {
     color: "#20415A",
     fontWeight: "bold",
-    marginBottom: "4px",
+    // marginBottom: "4px",
+    marginBottom: "0px",
     marginTop: 0,
     fontSize: "18px",
+    lineHeight: "20px",
   };
   const Location = {
     color: "#436783",
     fontWeight: "normal",
-    marginBottom: "2px",
+    // marginBottom: "2px",
+    marginBottom: "0px",
     marginTop: 0,
     fontSize: "16px",
+    lineHeight: "20px",
   };
   const City = {
     color: "#6D8BA1",
     fontWeight: "normal",
     textTransform: "uppercase",
     fontSize: "10px",
-    marginBottom: "2px",
+    // marginBottom: "2px",
+    marginBottom: "0px",
     marginTop: 0,
+    lineHeight: "12px",
   };
 
   const Map = {
@@ -42,11 +47,12 @@ const InfoDetail = () => {
     textDecoration: "none",
     marginTop: 0,
     fontSize: "14px",
+    lineHeight: "16px",
   };
 
   const Arrow = {
+    height: "12px",
     marginLeft: "16px",
-    marginRight: "10%",
   };
 
   //   JSX
@@ -60,7 +66,7 @@ const InfoDetail = () => {
           Map
         </a>
       </div>
-      <div>
+      <div style={{ marginRight: "10%" }}>
         <img src={LongArrow} style={Arrow} />
       </div>
       <div>

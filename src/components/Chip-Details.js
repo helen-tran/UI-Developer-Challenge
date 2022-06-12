@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import Arrow from "../../assets/Arrow-Chip.svg";
+import { ReactComponent as Arrow } from "../../assets/Arrow-Chip.svg";
 
 const ChipDetails = ({ onClick }) => {
   // CSS Styling
@@ -17,13 +17,17 @@ const ChipDetails = ({ onClick }) => {
     lineHeight: "20px",
     fontFamily: "Codec Pro",
     fontWeight: "bold",
+    marginBottom: "8px",
+    marginRight: "8px",
   };
 
   // JSX
   return (
     <button style={style} onClick={onClick}>
-      Itinerary
-      <img src={Arrow} />
+      <div style={{ display: "flex", alignItems: "center" }}>
+        Itinerary
+        <Arrow style={{ marginLeft: "12px" }} fill="#698CA5" />
+      </div>
     </button>
   );
 };

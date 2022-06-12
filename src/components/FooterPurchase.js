@@ -1,23 +1,27 @@
 import ChipBooking from "./Chip-Booking";
 import Bus from "../../assets/Bus.svg";
 import Time from "../../assets/Time.svg";
+import PropTypes from "prop-types";
 
-const FooterPurchase = () => {
+const FooterPurchase = ({ bottomPanel }) => {
   // CSS Styling
   const Wrapper = {
     display: "flex",
     justifyContent: "space-between",
-    alignItems: "center",
+    marginLeft: "16px",
+    fontFamily: "Codec Pro",
+    fontWeight: "normal",
+    color: "#436783",
+    height: "40px;",
   };
 
   const AttributeWrapper = {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    fontFamily: "Codec Pro",
-    fontWeight: "normal",
-    color: "#436783",
-    height: "24px;",
+    height: "24px",
+    marginTop: "8px",
+    marginBottom: "16px",
   };
 
   const Duration = {
@@ -34,22 +38,37 @@ const FooterPurchase = () => {
   return (
     <div style={Wrapper}>
       <div style={AttributeWrapper}>
-        <div style={AttributeWrapper}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
           <div>
             <img src={Bus} />
           </div>
           <p style={Text}>Bus</p>
         </div>
-        <div style={AttributeWrapper}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
           <div style={Duration}>
             <img src={Time} />
           </div>
           <p style={Text}>4h 30m</p>
         </div>
       </div>
-      <ChipBooking />
+      {bottomPanel ? <div>Multiple options:</div> : <ChipBooking label="$45" />}
     </div>
   );
 };
 
+FooterPurchase.propTypes = {
+  bottomPanel: PropTypes.bool,
+};
 export default FooterPurchase;

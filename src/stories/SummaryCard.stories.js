@@ -8,4 +8,4 @@ export default {
 const Template = (args) => <SummaryCard {...args} />;
 
 export const Summary = Template.bind({});
-Summary.args = {};
+Summary.args = { size: "mobile" };
