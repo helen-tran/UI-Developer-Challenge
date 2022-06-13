@@ -17,6 +17,8 @@ const SummaryCard = ({ size = "mobile" }) => {
     backgroundColor: "white",
     border: "1px solid",
     borderColor: "rgba(211, 222, 229, 0.85)",
+    boxShadow: "0px 6px 12px 0px #20415A1A",
+    boxShadow: "0px 1px 4px 0px #20415A1A",
   };
 
   // JSX

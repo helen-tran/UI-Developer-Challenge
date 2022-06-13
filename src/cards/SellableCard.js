@@ -15,6 +15,8 @@ const SellableCard = ({ size = "mobile", bottomPanel, borderOn }) => {
     height: "202px",
     borderRadius: "24px",
     backgroundColor: "white",
+    boxShadow: "0px 6px 12px 0px #20415A1A",
+    boxShadow: "0px 1px 4px 0px #20415A1A",
   };
   const BorderWrapper = {
     border: "1px solid",

@@ -40,7 +40,7 @@ There are two different types of trip information; one for most of the cards com
 
 ## Cards
 
-Here are all the cards with the sub-components integrated. On storybook, you can selected fixed sizes for mobile and tablet, or responsive for a responsive card.
+Here are all the cards with the sub-components integrated. On storybook, you can selecte fixed sizes for mobile and tablet, or responsive for a responsive card.
 
 ### Sellable Card
 

@@ -20,6 +20,8 @@ const CardTopPanel = ({ size = "mobile" }) => {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
+    boxShadow:
+      "0px 1px 4px rgba(32, 65, 90, 0.1), 0px 6px 12px rgba(32, 65, 90, 0.1)",
   };
 
   const TextWrapper = {
