@@ -6,6 +6,7 @@ const ChipBooking = ({ label, onClick, isPaleBlue }) => {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    textAlign: "center",
     backgroundColor: "#0271CA",
     border: "none",
     width: "88px",
@@ -38,32 +39,20 @@ const ChipBooking = ({ label, onClick, isPaleBlue }) => {
       {isPaleBlue ? (
         <>
           <button style={PaleBlue} onClick={onClick}>
-            <div
+            {label}
+            <Arrow
               style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
+                marginLeft: "12px",
               }}
-            >
-              {label}
-              <Arrow
-                style={{
-                  marginLeft: "12px",
-                  marginTop: "0",
-                  marginBottom: "0",
-                }}
-                fill="#0795FF"
-              />
-            </div>
+              fill="#0795FF"
+            />
           </button>
         </>
       ) : (
         <>
           <button style={DarkBlue} onClick={onClick}>
-            <div style={{ display: "flex", alignItems: "center" }}>
-              {label}
-              <Arrow fill="#A1D8FF" style={{ marginLeft: "12px" }} />
-            </div>
+            {label}
+            <Arrow fill="#A1D8FF" style={{ marginLeft: "12px" }} />
           </button>
         </>
       )}

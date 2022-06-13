@@ -9,7 +9,7 @@ const ChipDetails = ({ onClick }) => {
     alignItems: "center",
     justifyContent: "center",
     textAlign: "center",
-    // border: "none",
+    border: "none",
     width: "123px",
     height: "40px",
     fontSize: "16px",
@@ -18,16 +18,13 @@ const ChipDetails = ({ onClick }) => {
     lineHeight: "20px",
     fontFamily: "Codec Pro",
     fontWeight: "bold",
-    border: "solid",
   };
 
   // JSX
   return (
     <button style={style} onClick={onClick}>
-      <div style={{ display: "flex", alignItems: "center" }}>
-        Itinerary
-        <Arrow style={{ marginLeft: "0px" }} fill="#698CA5" />
-      </div>
+      Itinerary
+      <Arrow style={{ marginLeft: "12px" }} fill="#698CA5" />
     </button>
   );
 };
