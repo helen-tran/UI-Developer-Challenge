@@ -7,7 +7,7 @@ const SellableCard = ({ size = "mobile", bottomPanel, borderOn }) => {
   // Reponsiveness;
   let width = "360px";
   if (size === "tablet") width = "600px";
-  if (size === "web") width = "";
+  if (size === "responsive") width = "";
 
   // CSS Styling
   const Wrapper = {
@@ -45,7 +45,7 @@ const SellableCard = ({ size = "mobile", bottomPanel, borderOn }) => {
 };
 
 SellableCard.propTypes = {
-  size: PropTypes.oneOf(["mobile", "tablet", "web"]),
+  size: PropTypes.oneOf(["mobile", "tablet", "responsive"]),
   borderOn: PropTypes.bool,
 };
 

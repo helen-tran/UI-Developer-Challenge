@@ -7,7 +7,7 @@ const SummaryCard = ({ size = "mobile" }) => {
   // Reponsiveness;
   let width = "360px";
   if (size === "tablet") width = "600px";
-  if (size === "web") width = "";
+  if (size === "responsive") width = "";
 
   // CSS Styling
   const Wrapper = {
@@ -30,6 +30,6 @@ const SummaryCard = ({ size = "mobile" }) => {
 };
 
 SummaryCard.propTypes = {
-  size: PropTypes.oneOf(["mobile", "tablet", "web"]),
+  size: PropTypes.oneOf(["mobile", "tablet", "responsive"]),
 };
 export default SummaryCard;

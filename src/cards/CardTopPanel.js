@@ -6,7 +6,7 @@ const CardTopPanel = ({ size = "mobile" }) => {
   // Reponsiveness;
   let width = "360px";
   if (size === "tablet") width = "600px";
-  if (size === "web") width = "";
+  if (size === "responsive") width = "";
 
   // CSS Styling
   const Wrapper = {
@@ -17,9 +17,9 @@ const CardTopPanel = ({ size = "mobile" }) => {
     borderRadius: "24px",
     width: `${width}`,
     height: "234px",
-    position: "relative",
-    boxShadow:
-      "0px 1px 1px rgba(32, 65, 90, 0.1), 0px 2px 4px rgba(32, 65, 90, 0.1)",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
   };
 
   const TextWrapper = {
@@ -48,6 +48,6 @@ const CardTopPanel = ({ size = "mobile" }) => {
 };
 
 CardTopPanel.propTypes = {
-  size: PropTypes.oneOf(["mobile", "tablet", "web"]),
+  size: PropTypes.oneOf(["mobile", "tablet", "responsive"]),
 };
 export default CardTopPanel;

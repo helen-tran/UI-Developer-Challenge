@@ -9,7 +9,7 @@ const CardBottomPanel = ({ size = "mobile" }) => {
   // Reponsiveness;
   let width = "360px";
   if (size === "tablet") width = "600px";
-  if (size === "web") width = "";
+  if (size === "responsive") width = "";
 
   // CSS Styling
   const Wrapper = {
@@ -59,7 +59,7 @@ const CardBottomPanel = ({ size = "mobile" }) => {
       </div>
       <div style={Line}></div>
       <div style={RowWrapper}>
-        <div style={{ display: "flex" }}>
+        <div style={{ display: "flex", alignItems: "center" }}>
           <p style={Text}>First-class</p>
           <img src={Refund} style={{ marginRight: "4px" }} />
           <img src={SeatXL} style={{ marginRight: "4px" }} />
@@ -72,6 +72,6 @@ const CardBottomPanel = ({ size = "mobile" }) => {
 };
 
 CardBottomPanel.propTypes = {
-  size: PropTypes.oneOf(["mobile", "tablet", "web"]),
+  size: PropTypes.oneOf(["mobile", "tablet", "responsive"]),
 };
 export default CardBottomPanel;

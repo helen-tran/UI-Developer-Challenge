@@ -13,7 +13,8 @@ const FooterPurchase = ({ bottomPanel }) => {
     fontFamily: "Codec Pro",
     fontWeight: "normal",
     color: "#436783",
-    height: "40px",
+    marginRight: "8px",
+    marginBottom: "8px",
   };
 
   const AttributeWrapper = {
@@ -21,17 +22,12 @@ const FooterPurchase = ({ bottomPanel }) => {
     alignItems: "center",
     justifyContent: "center",
     height: "24px",
-    marginTop: "8px",
-    marginBottom: "16px",
   };
 
   const OptionsWrapper = {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-  };
-  const Duration = {
-    marginLeft: "8pt",
   };
 
   const Text = {
@@ -71,9 +67,7 @@ const FooterPurchase = ({ bottomPanel }) => {
               justifyContent: "center",
             }}
           >
-            <div style={Duration}>
-              <img src={Time} />
-            </div>
+            <img src={Time} style={{ marginLeft: "8px" }} />
             <p style={Text}>4h 30m</p>
           </div>
         </div>
@@ -86,9 +80,7 @@ const FooterPurchase = ({ bottomPanel }) => {
               justifyContent: "center",
             }}
           >
-            <div>
-              <img src={Bus} />
-            </div>
+            <img src={Bus} />
             <p style={Text}>Bus</p>
           </div>
           <div
@@ -98,9 +90,7 @@ const FooterPurchase = ({ bottomPanel }) => {
               justifyContent: "center",
             }}
           >
-            <div style={Duration}>
-              <img src={Time} />
-            </div>
+            <img src={Time} style={{ marginLeft: "8px" }} />
             <p style={Text}>4h 30m</p>
           </div>
         </div>

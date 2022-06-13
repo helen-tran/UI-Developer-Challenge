@@ -8,11 +8,14 @@ const FooterSummary = () => {
   const Wrapper = {
     display: "flex",
     justifyContent: "space-between",
+    alignItems: "center",
     marginLeft: "16px",
     fontFamily: "Codec Pro",
     fontWeight: "normal",
     color: "#436783",
     height: "40px;",
+    marginBottom: "8px",
+    marginRight: "8px",
   };
 
   const AttributeWrapper = {
@@ -20,12 +23,6 @@ const FooterSummary = () => {
     alignItems: "center",
     justifyContent: "center",
     height: "24px",
-    marginTop: "8px",
-    marginBottom: "16px",
-  };
-
-  const Duration = {
-    marginLeft: "8pt",
   };
 
   const Text = {
@@ -45,9 +42,7 @@ const FooterSummary = () => {
             justifyContent: "center",
           }}
         >
-          <div>
-            <img src={Bus} />
-          </div>
+          <img src={Bus} />
           <p style={Text}>Bus</p>
         </div>
         <div
@@ -57,9 +52,7 @@ const FooterSummary = () => {
             justifyContent: "center",
           }}
         >
-          <div style={Duration}>
-            <img src={Time} />
-          </div>
+          <img src={Time} style={{ marginLeft: "8px" }} />
           <p style={Text}>4h 30m</p>
         </div>
         <div
@@ -69,9 +62,7 @@ const FooterSummary = () => {
             justifyContent: "center",
           }}
         >
-          <div style={Duration}>
-            <img src={Passengers} />
-          </div>
+          <img src={Passengers} style={{ marginLeft: "8px" }} />
           <p style={Text}>2</p>
         </div>
       </div>

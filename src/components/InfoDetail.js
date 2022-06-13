@@ -21,8 +21,7 @@ const InfoDetail = () => {
   const Time = {
     color: "#20415A",
     fontWeight: "bold",
-    // marginBottom: "4px",
-    marginBottom: "0px",
+    marginBottom: "4px",
     marginTop: 0,
     fontSize: "18px",
     lineHeight: "20px",
@@ -30,8 +29,7 @@ const InfoDetail = () => {
   const Location = {
     color: "#436783",
     fontWeight: "normal",
-    // marginBottom: "2px",
-    marginBottom: "0px",
+    marginBottom: "2px",
     marginTop: 0,
     fontSize: "16px",
     lineHeight: "20px",
@@ -42,10 +40,8 @@ const InfoDetail = () => {
     fontWeight: "normal",
     textTransform: "uppercase",
     fontSize: "10px",
-    // marginBottom: "2px",
-    marginBottom: "0px",
+    marginBottom: "2px",
     marginTop: 0,
-    lineHeight: "12px",
   };
 
   const Map = {
@@ -55,7 +51,6 @@ const InfoDetail = () => {
     textDecoration: "none",
     marginTop: 0,
     fontSize: "14px",
-    lineHeight: "16px",
   };
 
   //   JSX
