@@ -1,9 +1,8 @@
 import ChipBooking from "../components/Chip-Booking";
-import { Button } from "./Button";
 
 export default {
   title: "Components/Chip",
-  component: Button,
+  component: ChipBooking,
   argTypes: { onClick: { action: "onClick" } },
 };
 const Template = (args) => <ChipBooking {...args} />;

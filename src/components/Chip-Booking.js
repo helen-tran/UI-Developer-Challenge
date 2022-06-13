@@ -16,8 +16,6 @@ const ChipBooking = ({ label, onClick, isPaleBlue }) => {
     lineHeight: "20px",
     fontFamily: "Codec Pro",
     fontWeight: "bold",
-    marginBottom: "8px",
-    marginRight: "8px",
   };
 
   const PaleBlue = {
@@ -48,20 +46,21 @@ const ChipBooking = ({ label, onClick, isPaleBlue }) => {
               }}
             >
               {label}
-              <Arrow style={{ marginLeft: "12px" }} fill="#0795FF" />
+              <Arrow
+                style={{
+                  marginLeft: "12px",
+                  marginTop: "0",
+                  marginBottom: "0",
+                }}
+                fill="#0795FF"
+              />
             </div>
           </button>
         </>
       ) : (
         <>
           <button style={DarkBlue} onClick={onClick}>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
+            <div style={{ display: "flex", alignItems: "center" }}>
               {label}
               <Arrow fill="#A1D8FF" style={{ marginLeft: "12px" }} />
             </div>
@@ -74,15 +73,11 @@ const ChipBooking = ({ label, onClick, isPaleBlue }) => {
 
 ChipBooking.propTypes = {
   label: PropTypes.string,
-  backgroundColor: PropTypes.string,
-  height: PropTypes.string,
   onClick: PropTypes.func,
-  color: PropTypes.string,
   isPaleBlue: PropTypes.bool,
 };
 
 ChipBooking.defaultProps = {
-  backgroundColor: null,
   isPaleBlue: false,
   onClick: undefined,
 };

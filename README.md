@@ -16,7 +16,7 @@ There are 3 different chips, light blue with price, dark blue with price and the
 
 ### Header
 
-![image](ReadMeScreenShot/Header.png)
+![image](ReadMeScreenshot/Header.png)
 
 ### Footer
 
@@ -26,9 +26,9 @@ There are 3 different footer, the footer for the summary card and the two differ
 
 There are two different types of trip information; one for most of the cards component and another one specifically for the summary card.
 
-![image](ReadMeScreenShot/InfoDetail.png)
+![image](ReadMeScreenshot/InfoDetail.png)
 
-![image](ReadMeScreenShot/InfoDetailSummary.png)
+![image](ReadMeScreenshot/InfoDetailSummary.png)
 
 ## Cards
 
