@@ -14,6 +14,10 @@ Here are all the components.
 
 There are 3 different chips, light blue with price, dark blue with price and the itinerary chip.
 
+![image](ReadMeScreenshot/LightBlueChip.png)
+![image](ReadMeScreenshot/DarkBlueChip.png)
+![image](ReadMeScreenshot/Chip-Itinerary.png)
+
 ### Header
 
 ![image](ReadMeScreenshot/Header.png)
@@ -21,6 +25,10 @@ There are 3 different chips, light blue with price, dark blue with price and the
 ### Footer
 
 There are 3 different footer, the footer for the summary card and the two different footer for booking.
+
+![image](ReadMeScreenshot/FooterSummary.png)
+![image](ReadMeScreenshot/FooterSellable.png)
+![image](ReadMeScreenshot/FooterSellableOption.png)
 
 ### Info
 
@@ -36,8 +44,16 @@ Here are all the cards with the sub-components integrated. On storybook, you can
 
 ### Sellable Card
 
+![image](ReadMeScreenshot/SellableCard.png)
+
 ### Summary Card
+
+![image](ReadMeScreenshot/SummaryCard.png)
 
 ### With Top Panel
 
+![image](ReadMeScreenshot/TopPanelCard.png)
+
 ### With Bottom Panel
+
+![image](ReadMeScreenshot/BottomPanelCard.png)
