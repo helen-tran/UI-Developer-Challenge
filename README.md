@@ -24,7 +24,7 @@ There are 3 different chips, light blue with price, dark blue with price and the
 
 ### Footer
 
-There are 3 different footer, the footer for the summary card and the two different footer for booking.
+There are 3 different footers, the footer for the summary card and the two different footers for booking.
 
 ![image](ReadMeScreenshot/FooterSummary.png)
 ![image](ReadMeScreenshot/FooterSellable.png)
